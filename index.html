@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #87ceeb;
+            min-height: 100vh;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #87ceeb;
+            padding: 30px;
+        }
+
+        /* TOP SECTION */
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            margin-bottom: 40px;
+        }
+
+        .profile img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #f5d28b;
+        }
+
+        .profile-info h1 {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .profile-info p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* EDUCATION SECTION */
+
+        .education {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card {
+            background-color: #ed82a9;
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            min-height: 230px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 12px;
+        }
+
+        .card h2 {
+            color: #555;
+            font-size: 20px;
+        }
+
+        /* ACHIEVEMENTS */
+
+        .achievements {
+            width: 250px;
+            margin: 35px auto 0;
+            background-color: #90d083;
+            border-radius: 15px;
+            padding: 25px;
+        }
+
+        .achievements h2 {
+            color: #555;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .achievements ul {
+            color: #555;
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .education {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- PROFILE -->
+
+        <div class="profile">
+
+            <img src="c:\Users\mades\OneDrive\Desktop\WhatsApp Image 2026-09-29 at 10.00.54 AM.jpeg"
+                 alt="My Photo">
+
+            <div class="profile-info">
+
+                <h1>Madesh Gowda A M</h1>
+
+                <p>
+                    I am a passionate engineering student interested
+                    in technology, programming and designing.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- EDUCATION -->
+
+        <div class="education">
+
+            <!-- SCHOOL -->
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR71jMz4gsXMF4GWvqo1UP4uFADKCUxy8K-sV1BO3-itQ&s"
+                     alt="School">
+
+                <h2>Rotary Brindavan School</h2>
+                <a href="https://www.schoolmykids.com/school/rotary-brindavan-school-brindavan-extension-mysuru-mysore-karnataka-india-s10011164" target="_blank">information </a>
+
+            </div>
+
+
+            <!-- PU COLLEGE -->
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPjUj--DUJ2YxkArHUOUwfyLdGVw3m0i2OPs7iTHtWMw&s=10"
+                     alt="PU College">
+
+                <h2>Jss polythenic Mysuru</h2>
+                <a href="https://www.jsspolytechnicmysuru.ac.in/" target="_blank">information </a>
+
+            </div>
+
+
+            <!-- ENGINEERING COLLEGE -->
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShaQrjlL6G-ObqUPsdokg7yjlhRpwftDSp8oO8Zja9CQ&s=10"
+                     alt="Engineering College">
+
+                <h2>The National Institute Mysuruu</h2>
+                <a href="https://nie.ac.in/" target="_blank">information </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ACHIEVEMENTS -->
+
+        <div class="achievements">
+
+            <h2>My Achievements</h2>
+
+            <ul>
+                <li>Programming</li>
+                <li>Driving </li>
+                <li>Engineering Projects</li>
+                <li>Sports</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
